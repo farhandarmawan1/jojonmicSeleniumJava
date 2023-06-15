@@ -18,6 +18,12 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - run:
+          name: Install google chrome
+          command: |
+              chmod +x ./scripts/InstallChrome.sh
+                          ./scripts/InstallChrome.sh
+  
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
