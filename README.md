@@ -27,7 +27,7 @@ What things you need to install:
    ```
 2. Change directory to project directory
    ```sh
-   cd LapakUMKM-UITesting
+   cd jojonmicSeleniumJava
    ```
 3. Run using this command
    ```sh
