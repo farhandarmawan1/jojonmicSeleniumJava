@@ -29,15 +29,14 @@ jobs:
       run:   |
               chmod +x ./scripts/InstallChrome.sh
                           ./scripts/InstallChrome.sh 
-    - name: Build with Maven
-      run: mvn  test --file pom.xml
+    
     - name: Running Automation
       run: mvn clean verify
       
     - name: Copy Cucumber JSON Report
       run: |
           cd target
-          cp Report/
+          cp ./Report
           
     - name: Commit Files Report # transfer the new html files back into the repository
       run: |
