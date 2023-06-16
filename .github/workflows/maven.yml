@@ -37,12 +37,12 @@ jobs:
     - name: Copy Cucumber JSON Report
       run: |
           cd target
-          cp ../Report/
+          cp Report/
           
     - name: Commit Files Report # transfer the new html files back into the repository
       run: |
           git config --local user.name "farhandarmawan1"
-          git add ./report
+          git add ./Report
           git commit -m "Updating the repository report"
     
     - name: Push changes # push the output folder to your repo
