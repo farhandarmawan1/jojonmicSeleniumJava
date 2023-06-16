@@ -37,7 +37,7 @@ jobs:
     - name: Copy Cucumber JSON Report
       run: |
           cd target
-          cp cucumber.json ../Report/
+          cp ../Report/
           
     - name: Commit Files Report # transfer the new html files back into the repository
       run: |
